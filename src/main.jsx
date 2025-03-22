@@ -12,6 +12,16 @@ const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY || functions.
 if (!PUBLISHABLE_KEY) {
   throw new Error("Missing Publishable Key");
 }
+async function fetchClerkKey() {
+  try {
+    const response = await fetch("https://your-project-id.cloudfunctions.net/api/get-clerk-key");
+    const data = await response.json();
+    return data.publishableKey;
+  } catch (error) {
+    console.error("Error fetching Clerk Publishable Key:", error);
+    return null;
+  }
+}
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>

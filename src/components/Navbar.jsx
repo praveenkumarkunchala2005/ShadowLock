@@ -141,10 +141,10 @@ const Navbar = () => {
 
             <SignedOut>
               <div className="flex flex-col space-y-4 mt-6">
-                <div className="border-2 rounded-3xl px-5 py-2 text-white bg-amber-500 hover:bg-amber-600 transition duration-200 text-center">
+                <div onClick={()=>setIsSidebarOpen(false)} className="border-2 rounded-3xl px-5 py-2 text-white bg-amber-500 hover:bg-amber-600 transition duration-200 text-center">
                   <SignInButton />
                 </div>
-                <div className="border-2 rounded-3xl px-5 py-2 text-white bg-amber-500 hover:bg-amber-600 transition duration-200 text-center">
+                <div onClick={()=>setIsSidebarOpen(false)} className="border-2 rounded-3xl px-5 py-2 text-white bg-amber-500 hover:bg-amber-600 transition duration-200 text-center">
                   <SignUpButton />
                 </div>
               </div>
