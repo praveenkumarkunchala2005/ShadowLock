@@ -3,10 +3,11 @@ import { createRoot } from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./index.css";
 import App from "./App.jsx";
-import { ClerkProvider, RedirectToSignIn, SignedIn,SignedOut } from "@clerk/clerk-react";
+import { ClerkProvider, } from "@clerk/clerk-react";
 import Navbar from "./components/Navbar.jsx";
 import Footer from "./components/Footer.jsx";
-const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
+const functions = require("firebase-functions"); 
+const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY || functions.config().clerk.publishable_key;;
 
 if (!PUBLISHABLE_KEY) {
   throw new Error("Missing Publishable Key");
