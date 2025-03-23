@@ -126,6 +126,16 @@ const Navbar = () => {
               />
             </div>
           </SignedIn>
+          <SignedOut>
+              <div className="flex flex-row space-x-4">
+                <div className="border-2 rounded-3xl px-5 py-2 text-white bg-amber-500 hover:bg-amber-600 transition duration-200 text-center">
+                  <SignInButton />
+                </div>
+                <div className="border-2 rounded-3xl px-5 py-2 text-white bg-amber-500 hover:bg-amber-600 transition duration-200 text-center">
+                  <SignUpButton />
+                </div>
+              </div>
+          </SignedOut>
         </div>
       </nav>
 

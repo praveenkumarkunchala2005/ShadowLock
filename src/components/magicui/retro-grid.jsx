@@ -3,8 +3,8 @@ import { cn } from "@/lib/utils";
 export function RetroGrid({
   className,
   angle = 65,
-  cellSize = 60,
-  opacity = 0.5,
+  cellSize = 50,
+  opacity = 0.6,
   lightLineColor = "gray",
   darkLineColor = "gray",
   ...props
