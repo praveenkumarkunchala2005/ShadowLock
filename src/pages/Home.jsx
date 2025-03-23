@@ -88,7 +88,6 @@ const Home = () => {
           </div>
         )}
 
-        {/* Mobile View (Hidden on Desktop) */}
         {isMobile && (
           <Dialog open={isOpen} onOpenChange={setIsOpen}>
             <DialogContent className="max-w-lg bg-white rounded-lg p-6">
