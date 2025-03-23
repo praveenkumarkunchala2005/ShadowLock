@@ -7,6 +7,7 @@ import { ClerkProvider, } from "@clerk/clerk-react";
 import Navbar from "./components/Navbar.jsx";
 import Footer from "./components/Footer.jsx";
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
+import { RetroGrid } from "./components/magicui/retro-grid";
 if (!PUBLISHABLE_KEY) {
   throw new Error("Missing Publishable Key");
 }
