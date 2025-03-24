@@ -39,7 +39,17 @@ const SideBar = ({ setSelectedItem,credentials }) => {
           >
             <div className="flex items-center space-x-3">
               <img
-                src={`https://www.google.com/s2/favicons?sz=64&domain=${item.websiteName}`}
+                src={
+                  item?.websiteURL
+                  ? `https://www.google.com/s2/favicons?sz=128&domain=${
+                      new URL(
+                        item.websiteURL.startsWith("http")
+                          ? item.websiteURL
+                          : `https://${item.websiteURL}`
+                      ).hostname
+                    }`
+                  : "/default-favicon.png"
+                }
                 alt={item.websiteName}
                 className="w-8 h-8 rounded-md"
               />
