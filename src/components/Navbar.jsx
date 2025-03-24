@@ -84,7 +84,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="bg-gray-50 shadow-md top-0 left-0 w-full z-50">
+      <nav className="bg-gray-50 shadow-md top-0 left-0 w-full z-50 fixed">
         <div className="max-w-screen-xl flex items-center justify-between mx-auto p-4">
           <Link
             to="/"

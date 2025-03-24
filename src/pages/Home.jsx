@@ -69,7 +69,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="flex px-2 md:px-24">
+    <div className="flex px-2 md:px-24 mt-20">
       <div className="flex w-full h-screen">
         {/* Sidebar */}
         <div className="w-full lg:w-1/3 md:w-1/3 border-2">

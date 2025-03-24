@@ -18,7 +18,7 @@ import {
 const Body = () => {
   return (
     <>
-      <div className="p-1 border-b relative flex h-[600px] md:h-[800px] w-full flex-col items-center justify-center overflow-hidden">
+      <div className="p-1 border-b relative flex h-screen w-full flex-col items-center justify-center overflow-hidden">
         <DotPattern
           glow={true}
           className={cn(
@@ -65,7 +65,7 @@ const Body = () => {
           </Link>
         </SignedIn>
         <SignedOut>
-          <div className="flex items-center mt-2 space-x-4">
+          <div className="flex items-center -2 space-x-4">
             <RippleButton>
               <SignInButton />
             </RippleButton>
